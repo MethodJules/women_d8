@@ -1,0 +1,206 @@
+uuid: acf5d0b5-e23b-40f8-9dad-a107ca5863f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.person.field_age_at_migration
+    - field.field.node.person.field_archival_materials
+    - field.field.node.person.field_biography
+    - field.field.node.person.field_chronics
+    - field.field.node.person.field_domiciles
+    - field.field.node.person.field_father
+    - field.field.node.person.field_marriage_children
+    - field.field.node.person.field_mother
+    - field.field.node.person.field_nachname
+    - field.field.node.person.field_networks
+    - field.field.node.person.field_other_sources
+    - field.field.node.person.field_person_bild
+    - field.field.node.person.field_person_datei
+    - field.field.node.person.field_publication
+    - field.field.node.person.field_siblings
+    - field.field.node.person.field_year_of_migration
+    - image.style.thumbnail
+    - node.type.person
+  module:
+    - image
+    - path
+    - text
+id: node.person.default
+targetEntityType: node
+bundle: person
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_age_at_migration:
+    weight: 9
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_archival_materials:
+    weight: 11
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_biography:
+    weight: 3
+    type: text_textarea
+    settings:
+      rows: 10
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_chronics:
+    weight: 14
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_domiciles:
+    weight: 15
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_father:
+    weight: 6
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_marriage_children:
+    weight: 8
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_mother:
+    weight: 5
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_nachname:
+    weight: 2
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_networks:
+    weight: 4
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_other_sources:
+    weight: 12
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_person_bild:
+    weight: 18
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  field_publication:
+    weight: 16
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_siblings:
+    weight: 7
+    type: string_textfield
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_year_of_migration:
+    weight: 10
+    type: number
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_person_datei:
+    type: file_generic
+    weight: 22
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

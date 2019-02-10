@@ -1,0 +1,9 @@
+uuid: 683cdb55-c3c8-46f8-bb42-1289c0c6a539
+langcode: en
+status: true
+dependencies: {  }
+name: 'Professional Activities'
+vid: tax_morph_m_professional_activit
+description: ''
+hierarchy: 0
+weight: 0

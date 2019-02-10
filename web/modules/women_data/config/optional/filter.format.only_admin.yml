@@ -1,0 +1,8 @@
+uuid: af467b75-cd68-40d8-9474-4547d8b2d589
+langcode: en
+status: true
+dependencies: {  }
+name: only_admin
+format: only_admin
+weight: 0
+filters: {  }

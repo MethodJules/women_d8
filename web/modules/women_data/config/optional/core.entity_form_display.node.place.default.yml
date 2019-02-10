@@ -1,0 +1,89 @@
+uuid: 58f6e480-70ce-4b5c-92e7-a3197e1b7085
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.place.field_location
+    - field.field.node.place.field_person1
+    - field.field.node.place.field_postanschrift
+    - node.type.place
+  module:
+    - address
+    - geofield
+    - path
+id: node.place.default
+targetEntityType: node
+bundle: place
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_location:
+    weight: 38
+    settings:
+      html5_geolocation: false
+    third_party_settings: {  }
+    type: geofield_latlon
+    region: content
+  field_person1:
+    weight: 39
+    type: options_select
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_postanschrift:
+    weight: 36
+    type: address_default
+    settings:
+      default_country: null
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 15
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 120
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 16
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }
