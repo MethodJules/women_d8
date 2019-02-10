@@ -37,7 +37,7 @@ content:
     third_party_settings: {  }
     region: content
   field_description:
-    weight: 101
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }

@@ -2,4 +2,10 @@ name: Women Data Fetcher
 description: Fetches the content from jigsaw.navi
 type: module
 core: 8.x
-package: Jigasw.Navi
+package: Jigsaw.Navi
+dependencies:
+  - migrate
+  - migrate_drupal
+  - migrate_plus
+  - migrate_drupal_ui
+  - migrate_tools
