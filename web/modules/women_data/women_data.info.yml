@@ -9,3 +9,5 @@ dependencies:
   - migrate_plus
   - migrate_drupal_ui
   - migrate_tools
+  - language
+  - optional_end_date
