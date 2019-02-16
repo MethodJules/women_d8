@@ -46,7 +46,7 @@ process:
       source: field_other_activities
       process:
         target_id: tid
-  field_person1: field_person1
+  field_person1: field_person
 
 destination:
   plugin: 'entity:node'

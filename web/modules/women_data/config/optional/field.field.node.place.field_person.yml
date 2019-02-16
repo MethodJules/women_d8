@@ -1,25 +1,27 @@
-uuid: 9bebc876-d2d5-4158-b77c-af60fdad8862
+uuid: 5e90269c-a214-4ded-94fa-53eedf3fd405
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_person1
-    - node.type.person
-    - node.type.sweducation
+  - field.storage.node.field_person
+  - node.type.person
+  - node.type.place
   module:
-    - entityconnect
+  - entityconnect
 third_party_settings:
   entityconnect:
     buttons:
       button_add: '1'
       button_edit: '1'
     icons:
-      icon_add: '0'
+      icon_add: '2'
       icon_edit: '0'
-id: node.sweducation.field_person1
-field_name: field_person1
+_core:
+  default_config_hash: PI-5O71NSEapC0fGMcnADJMeTDITg1Y--x37w3AldGU
+id: node.place.field_person
+field_name: field_person
 entity_type: node
-bundle: sweducation
+bundle: place
 label: Person
 description: ''
 required: false

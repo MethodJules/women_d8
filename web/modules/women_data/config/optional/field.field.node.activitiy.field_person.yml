@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_person1
+    - field.storage.node.field_person
     - node.type.activitiy
     - node.type.person
   module:
@@ -16,8 +16,8 @@ third_party_settings:
     icons:
       icon_add: '2'
       icon_edit: '0'
-id: node.activitiy.field_person1
-field_name: field_person1
+id: node.activitiy.field_person
+field_name: field_person
 entity_type: node
 bundle: activitiy
 label: Person

@@ -5,8 +5,8 @@ dependencies:
   module:
     - datetime_range
     - node
-id: node.field_time2
-field_name: field_time2
+id: node.field_time
+field_name: field_time
 entity_type: node
 type: daterange
 settings:

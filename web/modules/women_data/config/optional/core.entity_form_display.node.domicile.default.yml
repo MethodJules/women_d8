@@ -3,9 +3,9 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.domicile.field_person1
+    - field.field.node.domicile.field_person
     - field.field.node.domicile.field_place
-    - field.field.node.domicile.field_time2
+    - field.field.node.domicile.field_time
     - node.type.domicile
   module:
     - datetime_range
@@ -21,7 +21,7 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_person1:
+  field_person:
     weight: 2
     type: options_select
     settings: {  }
@@ -33,7 +33,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_time2:
+  field_time:
     weight: 1
     settings: {  }
     third_party_settings: {  }

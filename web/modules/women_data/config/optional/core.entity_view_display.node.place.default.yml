@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.place.field_location
-    - field.field.node.place.field_person1
+    - field.field.node.place.field_person
     - field.field.node.place.field_postanschrift
     - node.type.place
   module:
@@ -53,7 +53,7 @@ content:
     third_party_settings: {  }
     type: leaflet_formatter_default
     region: content
-  field_person1:
+  field_person:
     label: above
     weight: 2
     type: entity_reference_label

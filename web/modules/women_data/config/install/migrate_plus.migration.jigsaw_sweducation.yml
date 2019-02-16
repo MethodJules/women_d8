@@ -31,7 +31,7 @@ process:
       source: field_educational_activities
       process:
         target_id: tid
-  field_person1: field_person1
+  field_person1: field_person
 
 destination:
   plugin: 'entity:node'

@@ -5,7 +5,7 @@ dependencies:
   config:
     - field.field.node.chronic.field_activities
     - field.field.node.chronic.field_sw_education
-    - field.field.node.chronic.field_time2
+    - field.field.node.chronic.field_time
     - node.type.chronic
   module:
     - datetime_range
@@ -33,7 +33,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-  field_time2:
+  field_time:
     weight: 1
     settings: {  }
     third_party_settings: {  }

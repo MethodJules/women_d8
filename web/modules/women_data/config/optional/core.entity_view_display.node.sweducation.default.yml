@@ -6,7 +6,7 @@ dependencies:
     - field.field.node.sweducation.field_description
     - field.field.node.sweducation.field_educational_activities
     - field.field.node.sweducation.field_institution_association
-    - field.field.node.sweducation.field_person1
+    - field.field.node.sweducation.field_person
     - field.field.node.sweducation.field_place
     - node.type.sweducation
   module:
@@ -40,7 +40,7 @@ content:
       link: true
     third_party_settings: {  }
     region: content
-  field_person1:
+  field_person:
     label: above
     weight: 6
     type: entity_reference_label
