@@ -1,0 +1,40 @@
+uuid: 8f6ca489-4bd8-4058-8beb-d55c8228bd96
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publication
+    - node.type.biblio
+    - node.type.person
+  module:
+    - entityconnect
+third_party_settings:
+  entityconnect:
+    buttons:
+      button_add: '0'
+      button_edit: '1'
+    icons:
+      icon_add: '0'
+      icon_edit: '0'
+_core:
+  default_config_hash: nTAn1fLH28mbVednMNr02wA8P953IdGnSTUvGVLVOCo
+id: node.person.field_publication
+field_name: field_publication
+entity_type: node
+bundle: person
+label: Bibliography
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      biblio: biblio
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

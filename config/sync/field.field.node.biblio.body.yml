@@ -1,0 +1,24 @@
+uuid: 20927e72-c1a3-41ff-ac4e-a4b34dcf7c98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.biblio
+  module:
+    - text
+_core:
+  default_config_hash: HeHJ1nKT74R-gH3IxdJzGVGLhoNTchJEEXQ1wzm0Lxs
+id: node.biblio.body
+field_name: body
+entity_type: node
+bundle: biblio
+label: Body
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

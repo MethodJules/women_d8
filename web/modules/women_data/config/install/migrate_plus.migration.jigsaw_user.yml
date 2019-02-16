@@ -17,10 +17,10 @@ process:
     -
       plugin: get
       source: name
-    -
-      plugin: dedupe_entity
-      entity_type: user
-      field: name
+    #- # rename users with the same name
+    #  plugin: dedupe_entity
+    #  entity_type: user
+    #  field: name
   pass: pass
   mail: email
   created: created

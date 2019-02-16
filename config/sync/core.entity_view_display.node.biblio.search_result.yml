@@ -1,0 +1,27 @@
+uuid: b1036e6d-5cd7-481e-920f-38f2f6c214c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.search_result
+    - field.field.node.biblio.body
+    - field.field.node.biblio.field_attached_file
+    - node.type.biblio
+  module:
+    - user
+_core:
+  default_config_hash: ynW_J_w7HWA9ETqbqycaM5Xx4owYW-c3aJBY2e_mWNo
+id: node.biblio.search_result
+targetEntityType: node
+bundle: biblio
+mode: search_result
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  body: true
+  field_attached_file: true
+  langcode: true
