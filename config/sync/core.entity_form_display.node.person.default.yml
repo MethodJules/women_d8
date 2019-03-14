@@ -64,15 +64,21 @@ content:
     region: content
   field_chronics:
     weight: 14
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_domiciles:
     weight: 15
-    settings: {  }
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_father:
     weight: 6
@@ -108,8 +114,11 @@ content:
     region: content
   field_networks:
     weight: 4
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_other_sources:

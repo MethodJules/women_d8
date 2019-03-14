@@ -30,14 +30,20 @@ content:
     third_party_settings: {  }
   field_academic_activities:
     weight: 6
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_civic_engagements:
     weight: 5
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_description:
@@ -51,32 +57,47 @@ content:
     region: content
   field_institution_association:
     weight: 2
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_other_activities:
     weight: 7
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_person:
     weight: 8
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_place:
     weight: 3
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_professional_activities:
     weight: 4
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   langcode:

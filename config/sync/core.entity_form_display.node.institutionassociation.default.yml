@@ -31,8 +31,11 @@ content:
     region: content
   field_place:
     weight: 34
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   langcode:

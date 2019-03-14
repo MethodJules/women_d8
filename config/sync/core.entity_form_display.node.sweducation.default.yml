@@ -27,7 +27,7 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_description:
-    weight: 12
+    weight: 8
     settings:
       rows: 9
       summary_rows: 3
@@ -42,27 +42,39 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_educational_activities:
-    weight: 13
-    settings: {  }
+    weight: 11
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
-    type: options_select
+    type: entity_reference_autocomplete
     region: content
   field_institution_association:
-    weight: 8
-    type: options_select
-    settings: {  }
+    weight: 9
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_person:
-    weight: 10
-    type: options_select
-    settings: {  }
+    weight: 12
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_place:
-    weight: 9
-    type: options_select
-    settings: {  }
+    weight: 10
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   langcode:
@@ -89,7 +101,7 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 11
+    weight: 13
     region: content
     third_party_settings: {  }
   sticky:

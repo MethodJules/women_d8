@@ -25,14 +25,20 @@ content:
     third_party_settings: {  }
   field_activities:
     weight: 7
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 41
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_sw_education:
     weight: 8
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_time:

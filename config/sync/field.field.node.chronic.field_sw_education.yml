@@ -12,7 +12,7 @@ id: node.chronic.field_sw_education
 field_name: field_sw_education
 entity_type: node
 bundle: chronic
-label: SW-Educations
+label: Educations
 description: ''
 required: false
 translatable: false
@@ -26,6 +26,6 @@ settings:
     sort:
       field: title
       direction: ASC
-    auto_create: false
+    auto_create: true
     auto_create_bundle: ''
 field_type: entity_reference
