@@ -37,6 +37,7 @@
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/address": "^1.4",
         "drupal/bibcite": "^1.0@alpha",
+        "drupal/bibcite_crossref": "^1.0@alpha",
         "drupal/bibcite_migrate": "^1.0@alpha",
         "drupal/chosen": "^2.6",
         "drupal/console": "^1.0.2",
