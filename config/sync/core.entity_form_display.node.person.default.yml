@@ -64,19 +64,13 @@ content:
     region: content
   field_chronics:
     weight: 14
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_domiciles:
     weight: 15
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+    settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
@@ -143,8 +137,11 @@ content:
     third_party_settings: {  }
   field_publication:
     weight: 16
-    type: options_select
-    settings: {  }
+    type: entity_reference_autocomplete
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
     region: content
   field_siblings:

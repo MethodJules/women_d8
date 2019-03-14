@@ -1,30 +1,19 @@
-uuid: 70848d67-bb10-4fef-871a-c4e9c55bbcaf
-langcode: en
-status: true
-dependencies:
-  enforced:
-    module:
-      - women_data
-_core:
-  default_config_hash: gT_TpGjd5lmKfH79sjiT0VPiWxTxqPf3YPE2hHQEnBI
 id: jigsaw_institutionassociation
-class: null
-field_plugin_method: null
-cck_plugin_method: null
+label: Jigsaw Nodes Institution-Association
 migration_tags:
-  - 'Drupal 7'
+  - Drupal 7
   - Content
 migration_group: jigsaw
-label: 'Jigsaw Nodes Institution-Association'
+
 source:
   plugin: d7_node
   node_type: institutionassociation
+
 process:
   nid: tnid
   vid: vid
   langcode:
-    -
-      plugin: default_value
+    - plugin: default_value
       source: language
       default_value: und
   title: title
@@ -36,10 +25,16 @@ process:
   sticky: sticky
   field_name: field_name
   field_place: field_place
+
 destination:
   plugin: 'entity:node'
   default_bundle: institutionassociation
+
 migration_dependencies:
   required:
-    - jigsaw_place
-    - jigsaw_user
+  - jigsaw_user
+
+dependencies:
+  enforced:
+    module:
+    - women_data

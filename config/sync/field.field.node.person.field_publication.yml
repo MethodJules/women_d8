@@ -3,8 +3,8 @@ langcode: en
 status: true
 dependencies:
   config:
+    - bibcite_entity.bibcite_reference_type.book
     - field.storage.node.field_publication
-    - node.type.biblio
     - node.type.person
 _core:
   default_config_hash: nTAn1fLH28mbVednMNr02wA8P953IdGnSTUvGVLVOCo
@@ -19,12 +19,13 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:node'
+  handler: 'default:bibcite_reference'
   handler_settings:
     target_bundles:
-      biblio: biblio
+      book: book
     sort:
-      field: _none
+      field: title
+      direction: ASC
     auto_create: false
     auto_create_bundle: ''
 field_type: entity_reference

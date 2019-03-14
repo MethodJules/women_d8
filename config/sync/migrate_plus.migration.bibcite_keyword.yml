@@ -1,0 +1,14 @@
+id: bibcite_keyword
+migration_group: jigsaw
+label: 'Jigsaw Publication Keywords'
+
+source:
+  plugin: bibcite_keyword
+
+process:
+  name:
+    - plugin: get
+      source: word
+
+destination:
+  plugin: 'entity:bibcite_keyword'

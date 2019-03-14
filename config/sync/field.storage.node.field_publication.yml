@@ -3,6 +3,7 @@ langcode: und
 status: true
 dependencies:
   module:
+    - bibcite_entity
     - node
 _core:
   default_config_hash: GPB9GupiQX-RcJjSGj4-qYb5oxYNazpnWKgezKT3ido
@@ -11,7 +12,7 @@ field_name: field_publication
 entity_type: node
 type: entity_reference
 settings:
-  target_type: node
+  target_type: bibcite_reference
 module: core
 locked: false
 cardinality: -1

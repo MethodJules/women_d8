@@ -1,0 +1,15 @@
+id: bibcite_contributor
+migration_group: jigsaw
+label: 'Jigsaw Publication Contributors'
+
+source:
+  plugin: bibcite_contributor
+
+process:
+  prefix: prefix
+  first_name: firstname
+  last_name: lastname
+  suffix: suffix
+
+destination:
+  plugin: 'entity:bibcite_contributor'
