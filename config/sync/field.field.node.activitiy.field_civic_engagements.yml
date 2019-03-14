@@ -6,16 +6,6 @@ dependencies:
     - field.storage.node.field_civic_engagements
     - node.type.activitiy
     - taxonomy.vocabulary.tax_morph_m_civic_engagements
-  module:
-    - entityconnect
-third_party_settings:
-  entityconnect:
-    buttons:
-      button_add: '0'
-      button_edit: '1'
-    icons:
-      icon_add: '2'
-      icon_edit: '0'
 _core:
   default_config_hash: xD-MCmHhY3SvObXGcFH8VrNG9l3HhhrFOcA61Bt6hD0
 id: node.activitiy.field_civic_engagements

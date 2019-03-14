@@ -6,16 +6,6 @@ dependencies:
     - field.storage.node.field_education_type
     - node.type.sweducation
     - taxonomy.vocabulary.tax_morph_m_education_type
-  module:
-    - entityconnect
-third_party_settings:
-  entityconnect:
-    buttons:
-      button_add: '1'
-      button_edit: '1'
-    icons:
-      icon_add: '2'
-      icon_edit: '2'
 id: node.sweducation.field_education_type
 field_name: field_education_type
 entity_type: node

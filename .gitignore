@@ -22,3 +22,9 @@
 
 # Ignore .env files as they are personal
 /.env
+/provisioning/
+/lib/
+/Vagrantfile
+/drush.bat
+/default.config.yml
+/.vagrant/

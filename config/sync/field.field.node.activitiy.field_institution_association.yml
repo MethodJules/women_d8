@@ -6,16 +6,6 @@ dependencies:
     - field.storage.node.field_institution_association
     - node.type.activitiy
     - node.type.institutionassociation
-  module:
-    - entityconnect
-third_party_settings:
-  entityconnect:
-    buttons:
-      button_add: '0'
-      button_edit: '1'
-    icons:
-      icon_add: '2'
-      icon_edit: '0'
 _core:
   default_config_hash: EXejyskNkwbGUc7tsmKOnI7I4iqZ-UmJY0GzROMlJcU
 id: node.activitiy.field_institution_association

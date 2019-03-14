@@ -6,16 +6,6 @@ dependencies:
     - field.storage.node.field_academic_activities
     - node.type.activitiy
     - taxonomy.vocabulary.tax_morph_m_academic_activities
-  module:
-    - entityconnect
-third_party_settings:
-  entityconnect:
-    buttons:
-      button_add: '0'
-      button_edit: '1'
-    icons:
-      icon_add: '2'
-      icon_edit: '0'
 _core:
   default_config_hash: kTl7tAXagFAtWtvyTos3VR3k9QSZYffJCc4GwazojKk
 id: node.activitiy.field_academic_activities

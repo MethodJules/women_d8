@@ -6,16 +6,6 @@ dependencies:
     - field.storage.node.field_person
     - node.type.person
     - node.type.place
-  module:
-    - entityconnect
-third_party_settings:
-  entityconnect:
-    buttons:
-      button_add: '1'
-      button_edit: '1'
-    icons:
-      icon_add: '2'
-      icon_edit: '0'
 _core:
   default_config_hash: gtTozqC3wkYt4OGQAOy2liTgJwBY2w8uQhq_E5W3XD8
 id: node.place.field_person
