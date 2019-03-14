@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.sweducation.field_description
+    - field.field.node.sweducation.field_education_type
     - field.field.node.sweducation.field_educational_activities
     - field.field.node.sweducation.field_institution_association
     - field.field.node.sweducation.field_person
@@ -26,6 +27,14 @@ content:
     third_party_settings: {  }
     type: text_default
     region: content
+  field_education_type:
+    weight: 4
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   field_educational_activities:
     weight: 3
     label: above
@@ -44,7 +53,7 @@ content:
     region: content
   field_person:
     label: above
-    weight: 4
+    weight: 5
     type: entity_reference_label
     settings:
       link: true
@@ -59,7 +68,7 @@ content:
     third_party_settings: {  }
     region: content
   links:
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }

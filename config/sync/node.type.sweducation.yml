@@ -6,12 +6,11 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus:
-      - main-menu
-    parent: 'main-menu:0:'
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: W82yoYQLb5s3Rf-B9XemddHzghTLvLYK4z33LvAp_IU
-name: SW-Education
+name: Education
 type: sweducation
 description: ''
 help: ''

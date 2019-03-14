@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.sweducation.field_description
+    - field.field.node.sweducation.field_education_type
     - field.field.node.sweducation.field_educational_activities
     - field.field.node.sweducation.field_institution_association
     - field.field.node.sweducation.field_person
@@ -21,12 +22,12 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_description:
-    weight: 121
+    weight: 12
     settings:
       rows: 9
       summary_rows: 3
@@ -34,40 +35,46 @@ content:
     third_party_settings: {  }
     type: text_textarea_with_summary
     region: content
+  field_education_type:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
   field_educational_activities:
-    weight: 122
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
   field_institution_association:
-    weight: 34
+    weight: 8
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_person:
-    weight: 39
+    weight: 10
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   field_place:
-    weight: 35
+    weight: 9
     type: options_select
     settings: {  }
     third_party_settings: {  }
     region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -75,26 +82,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 15
+    weight: 4
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 120
+    weight: 11
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 16
+    weight: 5
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -102,7 +109,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
