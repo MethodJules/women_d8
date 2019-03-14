@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - bibcite_entity.bibcite_reference_type.newspaper_article
+    - field.field.bibcite_reference.newspaper_article.field_file
   enforced:
     module:
       - bibcite_entity
@@ -11,6 +12,7 @@ dependencies:
       - bibcite_entity.bibcite_reference_type.newspaper_article
   module:
     - bibcite_entity
+    - file
 _core:
   default_config_hash: EnnL2bZOmBBNyoa9bExgRqbi8mBti-U9IIqIKS6iXLk
 id: bibcite_reference.newspaper_article.default
@@ -397,6 +399,14 @@ content:
       thousand_separator: ''
       prefix_suffix: true
     third_party_settings: {  }
+  field_file:
+    weight: 101
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
   keywords:
     type: entity_reference_label
     weight: 4
