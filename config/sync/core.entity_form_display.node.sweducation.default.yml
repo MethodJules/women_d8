@@ -14,7 +14,7 @@ dependencies:
     - path
     - text
 _core:
-  default_config_hash: E2LpLNV6SNXTQNHInEH0GSK1sb89yxusstnKV8Cn_Qo
+  default_config_hash: 5c_tu_5r8XLaK3LN1v20GZtWEc0O6oktvUdw6KZcwfU
 id: node.sweducation.default
 targetEntityType: node
 bundle: sweducation
@@ -36,11 +36,11 @@ content:
     type: text_textarea_with_summary
     region: content
   field_education_type:
+    type: options_buttons
     weight: 7
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_buttons
-    region: content
   field_educational_activities:
     weight: 13
     settings: {  }

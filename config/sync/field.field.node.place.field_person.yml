@@ -7,7 +7,7 @@ dependencies:
     - node.type.person
     - node.type.place
 _core:
-  default_config_hash: gtTozqC3wkYt4OGQAOy2liTgJwBY2w8uQhq_E5W3XD8
+  default_config_hash: PI-5O71NSEapC0fGMcnADJMeTDITg1Y--x37w3AldGU
 id: node.place.field_person
 field_name: field_person
 entity_type: node
