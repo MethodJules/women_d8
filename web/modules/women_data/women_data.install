@@ -8,7 +8,7 @@ use Drupal\taxonomy\Entity\Term;
 /**
  * Add Taxonomy terms.
  */
-function women_data_install() {
+function women_data_update_8101() {
   // Machine name of the Taxonomy vocabulary.
   $vocabulary = 'tax_morph_m_education_type';
 
