@@ -9,6 +9,7 @@ dependencies:
     - node.type.chronic
   module:
     - datetime_range
+    - inline_entity_form
     - path
 _core:
   default_config_hash: Tjo4sk5ZYNmdJTMQaiYi4y730LCNDAix7knT6kyBlUc
@@ -25,20 +26,34 @@ content:
     third_party_settings: {  }
   field_activities:
     weight: 7
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Activity
+      label_plural: Activities
+      collapsible: true
+      collapsed: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 41
-      placeholder: ''
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
   field_sw_education:
     weight: 8
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Education
+      label_plural: Educations
+      collapsible: true
+      collapsed: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
   field_time:

@@ -6,6 +6,7 @@ dependencies:
     - 'block_content:basic:ef0fe4af-8019-4f4b-96c5-f85fde5b9022'
   module:
     - block_content
+    - system
   theme:
     - bartik
 id: contentcreation
@@ -22,4 +23,9 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

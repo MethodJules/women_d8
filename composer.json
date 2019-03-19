@@ -49,6 +49,7 @@
         "drupal/entityconnect": "^2.0@alpha",
         "drupal/geocoder": "^2.1",
         "drupal/imce": "^1.7",
+        "drupal/inline_entity_form": "^1.0@RC",
         "drupal/leaflet": "^1.1",
         "drupal/leaflet_markercluster": "^1.0@alpha",
         "drupal/migrate_plus": "^4.1",

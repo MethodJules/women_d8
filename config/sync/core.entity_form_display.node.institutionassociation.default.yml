@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.institutionassociation.field_place
     - node.type.institutionassociation
   module:
+    - inline_entity_form
     - path
 _core:
   default_config_hash: AkwQDlDAfkbr8-xznoA2MN39BhFEHqgvLCYVqz1m5E8
@@ -31,11 +32,18 @@ content:
     region: content
   field_place:
     weight: 34
-    type: entity_reference_autocomplete
+    type: inline_entity_form_complex
     settings:
+      form_mode: default
+      override_labels: true
+      label_singular: Place
+      label_plural: Places
+      collapsible: true
+      collapsed: true
+      allow_new: true
+      allow_existing: true
       match_operator: CONTAINS
-      size: 60
-      placeholder: ''
+      allow_duplicate: false
     third_party_settings: {  }
     region: content
   langcode:

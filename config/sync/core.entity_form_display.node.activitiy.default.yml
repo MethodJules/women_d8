@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.activitiy.field_description
     - field.field.node.activitiy.field_institution_association
     - field.field.node.activitiy.field_other_activities
-    - field.field.node.activitiy.field_person
     - field.field.node.activitiy.field_place
     - field.field.node.activitiy.field_professional_activities
     - node.type.activitiy
@@ -66,15 +65,6 @@ content:
     region: content
   field_other_activities:
     weight: 7
-    type: entity_reference_autocomplete
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    region: content
-  field_person:
-    weight: 8
     type: entity_reference_autocomplete
     settings:
       match_operator: CONTAINS

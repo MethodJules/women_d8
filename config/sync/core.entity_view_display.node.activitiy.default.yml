@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.activitiy.field_description
     - field.field.node.activitiy.field_institution_association
     - field.field.node.activitiy.field_other_activities
-    - field.field.node.activitiy.field_person
     - field.field.node.activitiy.field_place
     - field.field.node.activitiy.field_professional_activities
     - node.type.activitiy
@@ -56,14 +55,6 @@ content:
   field_other_activities:
     label: above
     weight: 6
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
-  field_person:
-    label: above
-    weight: 7
     type: entity_reference_label
     settings:
       link: true

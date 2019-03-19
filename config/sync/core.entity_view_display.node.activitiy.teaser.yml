@@ -9,7 +9,6 @@ dependencies:
     - field.field.node.activitiy.field_description
     - field.field.node.activitiy.field_institution_association
     - field.field.node.activitiy.field_other_activities
-    - field.field.node.activitiy.field_person
     - field.field.node.activitiy.field_place
     - field.field.node.activitiy.field_professional_activities
     - node.type.activitiy
@@ -22,14 +21,6 @@ targetEntityType: node
 bundle: activitiy
 mode: teaser
 content:
-  field_person:
-    label: above
-    weight: 0
-    type: entity_reference_label
-    settings:
-      link: true
-    third_party_settings: {  }
-    region: content
   links:
     weight: 100
     settings: {  }
