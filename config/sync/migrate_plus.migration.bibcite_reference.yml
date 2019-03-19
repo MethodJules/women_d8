@@ -1,10 +1,16 @@
+uuid: f70c91f8-f559-4e6e-af1f-eaaef83f8a79
+langcode: en
+status: true
+dependencies: {  }
 id: bibcite_reference
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
 migration_group: jigsaw
 label: 'Jigsaw Publication Data'
-
 source:
   plugin: bibcite_reference
-
 process:
   title: title
   bibcite_year: biblio_year
@@ -53,7 +59,8 @@ process:
   bibcite_access_date: biblio_access_date
   bibcite_refereed: biblio_refereed
   keywords:
-    - plugin: sub_process
+    -
+      plugin: sub_process
       source: keywords
       process:
         target_id:
@@ -61,7 +68,8 @@ process:
           migration: bibcite_keyword
           source: kid
   author:
-    - plugin: sub_process
+    -
+      plugin: sub_process
       source: author
       process:
         target_id:
@@ -100,7 +108,8 @@ process:
             4: subsidiary
             5: corporate_institutional
   type:
-    - plugin: static_map
+    -
+      plugin: static_map
       source: biblio_type
       map:
         112: artwork
@@ -139,10 +148,8 @@ process:
         107: web_article
         134: web_project_page
         133: web_service
-
 destination:
   plugin: 'entity:bibcite_reference'
-
 migration_dependencies:
   required:
     - bibcite_contributor

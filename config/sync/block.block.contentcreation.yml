@@ -1,0 +1,25 @@
+uuid: 5a4519e6-601e-4207-900f-f5044ed60ce8
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ef0fe4af-8019-4f4b-96c5-f85fde5b9022'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: contentcreation
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:ef0fe4af-8019-4f4b-96c5-f85fde5b9022'
+settings:
+  id: 'block_content:ef0fe4af-8019-4f4b-96c5-f85fde5b9022'
+  label: 'Content Creation'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

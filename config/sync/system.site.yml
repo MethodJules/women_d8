@@ -1,11 +1,11 @@
 uuid: cd414258-be5d-4eb7-b1fa-85147a5aa3b2
 name: Drupal
-mail: ''
+mail: hoferj@uni-hildesheim.de
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /node/3302
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
