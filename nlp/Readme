@@ -1,0 +1,32 @@
+Python Version: 3.6.8 (Gab Probleme bei der Installation von Spacy mit Python 3.7.x)
+
+Pakete für Python installieren:
+- spacy
+- stanfordcorenlp
+- lxml
+
+Nach der Installation von Spacy noch das Model für Englisch installieren:
+- python -m spacy download en_core_web_lg
+
+Auf einem Linux Server Stanford CoreNLP zum Laufen gebracht (in diesem Fall Debian Server). 
+Hier aktuellste Version und Englisch Model heruntergeladen:
+
+https://stanfordnlp.github.io/CoreNLP/download.html
+
+Die Zip- und die Jar-Datei auf dem Server hochladen. Zip-Datei entpacken (in diesem Fall in den Ordner /home/username/stanford-corenlp-full-2018-10-05)
+Die Jar-Datei vom Model in denselben Ordner verschieben.
+
+In den Ordner wechseln:
+cd stanford-corenlp-full-2018-10-05
+
+Hier folgenden Befehl ausführen:
+nohup java -Xmx6g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -annotators tokenize,ssplit,pos,ner,kbp,lemma,coref -preload tokenize,ssplit,pos,lemma,ner,depparse,coref,kbp &
+
+(oder ohne nohup, um zu testen, ob Core NLP überhaupt vernünftig starten würde)
+
+Wenn Core NLP ohne Probleme startet, kann die Datei startnlp.sh in den Ordner /home/username/ kopiert und darüber der Service gestartet werden.
+
+Stanford Core NLP startet auf dem Port 9000 und lädt sogenannte Annotator in den Arbeitsspeicher. Dies kann beim ersten Starten ein paar Minuten dauern.
+Port 9000 in der Firewall vom Linuxserver freigeben. Entweder mit einen Eintrag manuell in iptables setzen oder ufw installieren und darüber den Port freischalten.
+
+Für Core NLP kann auch in Windows Server verwendet werden, allerdings lief die Anwendung unter Linux deutlich stabiler. 
