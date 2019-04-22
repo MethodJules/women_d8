@@ -8,6 +8,11 @@ Pakete für Python installieren:
 Nach der Installation von Spacy noch das Model für Englisch installieren:
 - python -m spacy download en_core_web_lg
 
+Abhängigkeiten für ClausIE herunterladen und in den Ordner kopieren, indem sich auch nlp.py befindet:
+
+https://www.xup.in/dl,48869636/ClausIEpy.zip/
+(Abhängigkeiten sind zu groß für Github)
+
 Auf einem Linux Server Stanford CoreNLP zum Laufen gebracht (in diesem Fall Debian Server). 
 Hier aktuellste Version und Englisch Model heruntergeladen:
 
