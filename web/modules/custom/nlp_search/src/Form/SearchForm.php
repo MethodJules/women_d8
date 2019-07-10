@@ -157,6 +157,8 @@ class SearchForm extends FormBase
         $nlp_filter = $form_state->getValue('nlp_filter');
         $nlp_filter_arr = json_decode($nlp_filter, true);
 
+        global $base_url;
+
         //Wenn weder die Volltextsuche, noch die Filtersuche Inhalt haben, eine entsprechende Fehlermeldung anzeigen.
         if (empty($nlp_fulltext) && count($nlp_filter_arr['types']) == 0 && count($nlp_filter_arr['relationships']) == 0) {
             \Drupal::messenger()->addMessage(t('Nothing to search for'), 'error');
@@ -167,7 +169,7 @@ class SearchForm extends FormBase
             if (!empty($nlp_fulltext)) {
 
                 //Eingebenen Suchquery an den Controller weiterleiten.
-                $path = \Drupal::request()->getSchemeAndHttpHost() . '/nlp-search/results/fulltext/' . urlencode($nlp_fulltext);
+                $path = $base_url . '/nlp-search/results/fulltext/' . urlencode($nlp_fulltext);
                 $response = new RedirectResponse($path, 302);
                 $response->send();
                 return;
@@ -177,7 +179,7 @@ class SearchForm extends FormBase
                     if (count($nlp_filter_arr['types']) > 0 || count($nlp_filter_arr['relationships']) > 0) {
 
                         //Eingegebene Suchfilter an den Controller weiterleiten.
-                        $path = \Drupal::request()->getSchemeAndHttpHost() . '/nlp-search/results/filter/' . urlencode($nlp_filter);
+                        $path = $base_url . '/nlp-search/results/filter/' . urlencode($nlp_filter);
                         $response = new RedirectResponse($path, 302);
                         $response->send();
                         return;

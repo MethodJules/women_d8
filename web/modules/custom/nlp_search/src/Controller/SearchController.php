@@ -85,7 +85,7 @@ class SearchController extends ControllerBase {
                                 //Der Page ist im Drupal Core enthalten und wird intialisiert.
                                 pager_default_initialize(count($result_arr['result']), $num_per_page);
 
-                                $host = \Drupal::request()->getSchemeAndHttpHost();
+                                global $base_url;
 
                                 //Von vorher definierten Start bis zum Ende für die aktuelle Seite das Array aus der
                                 //Datenbank iterieren und die HTML-Struktur zusammenbauen.
@@ -96,7 +96,7 @@ class SearchController extends ControllerBase {
                                     }
                                     $html = '<li>';
                                     $html .= '<h3 class="nlp-search-result-title">';
-                                    $html .= '<a href="' . $host . '/node/' . $result_arr['result'][$start]['node_id'] . '">' . $result_arr['result'][$start]['node_title'] . '</a>';
+                                    $html .= '<a href="' . $base_url . '/node/' . $result_arr['result'][$start]['node_id'] . '">' . $result_arr['result'][$start]['node_title'] . '</a>';
                                     $html .= '</h3>';
                                     $html .= '<div class="nlp-search-result-snippet-info">';
                                     $html .= '<p class="nlp-search-result-snippet">';
@@ -219,8 +219,7 @@ class SearchController extends ControllerBase {
 
                                 pager_default_initialize(count($result_arr['result']), $num_per_page);
 
-                                $host = \Drupal::request()->getSchemeAndHttpHost();
-
+                                global $base_url;
 
                                 for ($start; $start < $end; $start++) {
 
@@ -229,7 +228,7 @@ class SearchController extends ControllerBase {
                                     }
                                     $html = '<li>';
                                     $html .= '<h3 class="nlp-search-result-title">';
-                                    $html .= '<a href="' . $host . '/node/' . $result_arr['result'][$start]['node_id'] . '">' . $result_arr['result'][$start]['node_title'] . '</a>';
+                                    $html .= '<a href="' . $base_url . '/node/' . $result_arr['result'][$start]['node_id'] . '">' . $result_arr['result'][$start]['node_title'] . '</a>';
                                     $html .= '</h3>';
                                     $html .= '<div class="nlp-search-result-snippet-info">';
                                     $html .= '<p class="nlp-search-result-snippet">';
