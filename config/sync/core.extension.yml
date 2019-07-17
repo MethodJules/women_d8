@@ -73,6 +73,7 @@ module:
   views_ui: 0
   women_data: 0
   menu_link_content: 1
+  pathauto: 1
   views: 10
 theme:
   stable: 0
