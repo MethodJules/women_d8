@@ -26,6 +26,8 @@ module:
   devel: 0
   dynamic_page_cache: 0
   editor: 0
+  facets: 0
+  facets_range_widget: 0
   field: 0
   field_ui: 0
   file: 0
@@ -35,6 +37,7 @@ module:
   history: 0
   image: 0
   inline_entity_form: 0
+  kint: 0
   language: 0
   leaflet: 0
   leaflet_views: 0
@@ -46,6 +49,7 @@ module:
   migrate_plus: 0
   migrate_tools: 0
   migrate_upgrade: 0
+  nlp_search: 0
   node: 0
   optional_end_date: 0
   options: 0
@@ -54,6 +58,8 @@ module:
   quickedit: 0
   rdf: 0
   search: 0
+  search_api: 0
+  search_api_solr: 0
   serialization: 0
   shortcut: 0
   standard: 0
@@ -67,7 +73,6 @@ module:
   views_ui: 0
   women_data: 0
   menu_link_content: 1
-  pathauto: 1
   views: 10
 theme:
   stable: 0

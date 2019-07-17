@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8744d069ad5ec96563698f204d339cd8",
+    "content-hash": "27997975d7773be9f1d54cd0657c4b5e",
     "packages": [
         {
             "name": "academicpuma/citeproc-php",
@@ -2141,7 +2141,7 @@
             "version": "1.4.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/address",
+                "url": "https://git.drupalcode.org/project/address.git",
                 "reference": "8.x-1.4"
             },
             "dist": {
@@ -2200,7 +2200,7 @@
             "version": "1.0.0-alpha8",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bibcite",
+                "url": "https://git.drupalcode.org/project/bibcite.git",
                 "reference": "8.x-1.0-alpha8"
             },
             "dist": {
@@ -2276,7 +2276,7 @@
             "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bibcite_crossref",
+                "url": "https://git.drupalcode.org/project/bibcite_crossref.git",
                 "reference": "8.x-1.0-alpha1"
             },
             "dist": {
@@ -2394,7 +2394,7 @@
             "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/bibcite_migrate",
+                "url": "https://git.drupalcode.org/project/bibcite_migrate.git",
                 "reference": "8.x-1.0-alpha2"
             },
             "dist": {
@@ -2455,7 +2455,7 @@
             "version": "2.6.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/chosen",
+                "url": "https://git.drupalcode.org/project/chosen.git",
                 "reference": "8.x-2.6"
             },
             "dist": {
@@ -3104,7 +3104,7 @@
             "version": "3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/ctools",
+                "url": "https://git.drupalcode.org/project/ctools.git",
                 "reference": "8.x-3.1"
             },
             "dist": {
@@ -3197,7 +3197,7 @@
             "version": "3.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/date_range_formatter",
+                "url": "https://git.drupalcode.org/project/date_range_formatter.git",
                 "reference": "8.x-3.1"
             },
             "dist": {
@@ -3248,7 +3248,7 @@
             "version": "1.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/datetime_extras",
+                "url": "https://git.drupalcode.org/project/datetime_extras.git",
                 "reference": "8.x-1.0-alpha1"
             },
             "dist": {
@@ -3321,7 +3321,7 @@
             "version": "dev-2.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/devel",
+                "url": "https://git.drupalcode.org/project/devel.git",
                 "reference": "82480cffbb18c9a19d0bcf74464f7382926c0ee1"
             },
             "require": {
@@ -3401,7 +3401,7 @@
             "version": "3.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/ds",
+                "url": "https://git.drupalcode.org/project/ds.git",
                 "reference": "8.x-3.2"
             },
             "dist": {
@@ -3474,7 +3474,7 @@
             "version": "2.0.0-alpha1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/entityconnect",
+                "url": "https://git.drupalcode.org/project/entityconnect.git",
                 "reference": "8.x-2.0-alpha1"
             },
             "dist": {
@@ -3525,11 +3525,71 @@
             }
         },
         {
+            "name": "drupal/facets",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/facets.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ee2d584b8a225ab981e313f6050e13bc9c98e40b"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "require-dev": {
+                "drupal/search_api": "~1.5"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1556645881",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "See all contributors",
+                    "homepage": "https://www.drupal.org/node/2348769/committers"
+                },
+                {
+                    "name": "StryKaizer",
+                    "homepage": "https://www.drupal.org/user/462700"
+                },
+                {
+                    "name": "borisson_",
+                    "homepage": "https://www.drupal.org/user/2393360"
+                }
+            ],
+            "description": "The Facet module allows site builders to easily create and manage faceted search interfaces.",
+            "homepage": "https://www.drupal.org/project/facets",
+            "support": {
+                "source": "git://git.drupal.org/project/facets.git",
+                "issues": "https://www.drupal.org/project/issues/facets",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
             "name": "drupal/geocoder",
             "version": "2.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/geocoder",
+                "url": "https://git.drupalcode.org/project/geocoder.git",
                 "reference": "8.x-2.1"
             },
             "dist": {
@@ -3631,7 +3691,7 @@
             "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/geofield",
+                "url": "https://git.drupalcode.org/project/geofield.git",
                 "reference": "8.x-1.1"
             },
             "dist": {
@@ -3712,7 +3772,7 @@
             "version": "1.7.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/imce",
+                "url": "https://git.drupalcode.org/project/imce.git",
                 "reference": "8.x-1.7"
             },
             "dist": {
@@ -3759,7 +3819,7 @@
             "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/inline_entity_form",
+                "url": "https://git.drupalcode.org/project/inline_entity_form.git",
                 "reference": "8.x-1.0-rc1"
             },
             "dist": {
@@ -3825,7 +3885,7 @@
             "version": "1.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/leaflet",
+                "url": "https://git.drupalcode.org/project/leaflet.git",
                 "reference": "8.x-1.2"
             },
             "dist": {
@@ -3900,7 +3960,7 @@
             "version": "1.0.0-alpha2",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/leaflet_markercluster",
+                "url": "https://git.drupalcode.org/project/leaflet_markercluster.git",
                 "reference": "8.x-1.0-alpha2"
             },
             "dist": {
@@ -3952,7 +4012,7 @@
             "version": "4.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/migrate_plus",
+                "url": "https://git.drupalcode.org/project/migrate_plus.git",
                 "reference": "8.x-4.1"
             },
             "dist": {
@@ -4015,7 +4075,7 @@
             "version": "4.1.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/migrate_tools",
+                "url": "https://git.drupalcode.org/project/migrate_tools.git",
                 "reference": "8.x-4.1"
             },
             "dist": {
@@ -4083,7 +4143,7 @@
             "version": "3.0.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/migrate_upgrade",
+                "url": "https://git.drupalcode.org/project/migrate_upgrade.git",
                 "reference": "8.x-3.0"
             },
             "dist": {
@@ -4155,7 +4215,7 @@
             "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/optional_end_date",
+                "url": "https://git.drupalcode.org/project/optional_end_date.git",
                 "reference": "8.x-1.0-beta1"
             },
             "dist": {
@@ -4202,7 +4262,7 @@
             "version": "1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/pathauto",
+                "url": "https://git.drupalcode.org/project/pathauto.git",
                 "reference": "8.x-1.3"
             },
             "dist": {
@@ -4259,11 +4319,173 @@
             }
         },
         {
+            "name": "drupal/search_api",
+            "version": "1.13.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api.git",
+                "reference": "8.x-1.13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api-8.x-1.13.zip",
+                "reference": "8.x-1.13",
+                "shasum": "9f03dd5a4d9ee7c58d47aabc33d9229793d1195f"
+            },
+            "require": {
+                "drupal/core": "^8.5"
+            },
+            "require-dev": {
+                "drupal/search_api_autocomplete": "@dev",
+                "drupal/search_api_db": "*"
+            },
+            "suggest": {
+                "drupal/facets": "Adds the ability to create faceted searches.",
+                "drupal/search_api_autocomplete": "Allows adding autocomplete suggestions to search fields.",
+                "drupal/search_api_solr": "Adds support for using Apache Solr as a backend."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.13",
+                    "datestamp": "1557244685",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Seidl",
+                    "homepage": "https://www.drupal.org/u/drunken-monkey"
+                },
+                {
+                    "name": "Nick Veenhof",
+                    "homepage": "https://www.drupal.org/u/nick_vh"
+                },
+                {
+                    "name": "See other contributors",
+                    "homepage": "https://www.drupal.org/node/790418/committers"
+                }
+            ],
+            "description": "Provides a generic framework for modules offering search capabilities.",
+            "homepage": "https://www.drupal.org/project/search_api",
+            "support": {
+                "source": "http://git.drupal.org/project/search_api.git",
+                "issues": "https://www.drupal.org/project/issues/search_api",
+                "irc": "irc://irc.freenode.org/drupal-search-api"
+            }
+        },
+        {
+            "name": "drupal/search_api_solr",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/search_api_solr.git",
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/search_api_solr-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "e1c22328bcb4fb74ca84384fb4ac8af75dc7a618"
+            },
+            "require": {
+                "drupal/core": "^8.5",
+                "drupal/search_api": "~1.11",
+                "ext-json": "*",
+                "maennchen/zipstream-php": "0.4.*",
+                "php": "^7.0",
+                "solarium/solarium": "~4.2.0"
+            },
+            "conflict": {
+                "drupal/core": "<8.5",
+                "drupal/search_api_solr_multilingual": "*"
+            },
+            "require-dev": {
+                "drupal/devel": "*",
+                "drupal/facets": "1.x-dev",
+                "drupal/geofield": "1.x-dev",
+                "drupal/search_api_autocomplete": "1.x-dev",
+                "drupal/search_api_location": "1.x-dev",
+                "phayes/geophp": "^1.2"
+            },
+            "suggest": {
+                "drupal/facets": "Provides facetted search.",
+                "drupal/search_api_autocomplete": "Provides auto complete for search boxes.",
+                "drupal/search_api_location": "Provides location searches."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.7",
+                    "datestamp": "1553881385",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Markus Kalkbrenner",
+                    "homepage": "https://www.drupal.org/u/mkalkbrenner"
+                },
+                {
+                    "name": "Other contributors",
+                    "homepage": "https://www.drupal.org/node/982682/committers"
+                },
+                {
+                    "name": "amateescu",
+                    "homepage": "https://www.drupal.org/user/729614"
+                },
+                {
+                    "name": "cspitzlay",
+                    "homepage": "https://www.drupal.org/user/419305"
+                },
+                {
+                    "name": "drunken monkey",
+                    "homepage": "https://www.drupal.org/user/205582"
+                },
+                {
+                    "name": "mkalkbrenner",
+                    "homepage": "https://www.drupal.org/user/124705"
+                }
+            ],
+            "description": "Offers an implementation of the Search API that uses an Apache Solr server for indexing content.",
+            "homepage": "https://www.drupal.org/project/search_api_solr",
+            "support": {
+                "source": "http://git.drupal.org/project/search_api_solr.git",
+                "issues": "https://www.drupal.org/project/issues/search_api_solr",
+                "irc": "https://drupalchat.me/channel/search"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.5.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/token",
+                "url": "https://git.drupalcode.org/project/token.git",
                 "reference": "8.x-1.5"
             },
             "dist": {
@@ -4903,9 +5125,7 @@
             "version": "1.8.7",
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip",
-                "reference": null,
-                "shasum": null
+                "url": "https://github.com/harvesthq/chosen/releases/download/v1.8.7/chosen_v1.8.7.zip"
             },
             "require": {
                 "composer/installers": "^1.2.0"
@@ -5186,6 +5406,58 @@
                 "service"
             ],
             "time": "2017-05-10T09:20:27+00:00"
+        },
+        {
+            "name": "maennchen/zipstream-php",
+            "version": "v0.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maennchen/ZipStream-PHP.git",
+                "reference": "89e0cdb3c9ecabef4da988852003781a7802afb7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maennchen/ZipStream-PHP/zipball/89e0cdb3c9ecabef4da988852003781a7802afb7",
+                "reference": "89e0cdb3c9ecabef4da988852003781a7802afb7",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">= 5.6"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.3.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ZipStream\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Duncan",
+                    "email": "pabs@pablotron.org"
+                },
+                {
+                    "name": "Jesse Donat",
+                    "email": "donatj@gmail.com"
+                },
+                {
+                    "name": "Jonatan Männchen",
+                    "email": "jonatan@maennchen.ch"
+                }
+            ],
+            "description": "ZipStream is a library for dynamically streaming dynamic zip files from PHP without writing to the disk at all on the server.",
+            "keywords": [
+                "stream",
+                "zip"
+            ],
+            "time": "2016-09-13T10:29:17+00:00"
         },
         {
             "name": "masterminds/html5",
@@ -5756,6 +6028,64 @@
                 "rest"
             ],
             "time": "2018-05-01T14:41:41+00:00"
+        },
+        {
+            "name": "solarium/solarium",
+            "version": "4.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/solariumphp/solarium.git",
+                "reference": "20cf9e906a4e8e4a29c1ff48a2b145fa31d1064d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solariumphp/solarium/zipball/20cf9e906a4e8e4a29c1ff48a2b145fa31d1064d",
+                "reference": "20cf9e906a4e8e4a29c1ff48a2b145fa31d1064d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0",
+                "symfony/event-dispatcher": "^2.7 || ^3.0 || ^4.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "^3.8 || ^6.2",
+                "php-coveralls/php-coveralls": "^1.0",
+                "phpunit/phpunit": "^6.5",
+                "squizlabs/php_codesniffer": "^1.4",
+                "zendframework/zendframework": "^3.0"
+            },
+            "suggest": {
+                "minimalcode/search": "Query builder compatible with Solarium, allows simplified solr-query handling"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Solarium\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "See GitHub contributors",
+                    "homepage": "https://github.com/basdenooijer/solarium/contributors"
+                }
+            ],
+            "description": "PHP Solr client",
+            "homepage": "http://www.solarium-project.org",
+            "keywords": [
+                "php",
+                "search",
+                "solr"
+            ],
+            "time": "2018-11-24T09:20:30+00:00"
         },
         {
             "name": "stack/builder",
@@ -6341,16 +6671,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v3.4.22",
+            "version": "v3.4.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "ed5be1663fa66623b3a7004d5d51a14c4045399b"
+                "reference": "f18fdd6cc7006441865e698420cee26bac94741f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/ed5be1663fa66623b3a7004d5d51a14c4045399b",
-                "reference": "ed5be1663fa66623b3a7004d5d51a14c4045399b",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/f18fdd6cc7006441865e698420cee26bac94741f",
+                "reference": "f18fdd6cc7006441865e698420cee26bac94741f",
                 "shasum": ""
             },
             "require": {
@@ -6400,7 +6730,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "https://symfony.com",
-            "time": "2019-01-16T13:27:11+00:00"
+            "time": "2019-06-25T07:45:31+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -8702,12 +9032,12 @@
             "version": "v1.6.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/mikey179/vfsStream.git",
+                "url": "https://github.com/bovigo/vfsStream.git",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mikey179/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
+                "url": "https://api.github.com/repos/bovigo/vfsStream/zipball/d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "reference": "d5fec95f541d4d71c4823bb5e30cf9b9e5b96145",
                 "shasum": ""
             },
